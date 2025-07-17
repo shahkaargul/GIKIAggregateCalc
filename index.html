@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GIKI Aggregate Calculator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1><a href="index.html" onclick="location.reload()">🎓 GIKI Aggregate Calculator</a></h1>
+    <div class="form-group">
+      <label for="program">Select Program:</label>
+      <select id="program">
+        <option value="engineering">Engineering</option>
+        <option value="management">Management Sciences</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="test">Admission Test (%):</label>
+      <input type="number" id="test" placeholder="e.g. 80" />
+    </div>
+
+    <div class="form-group">
+      <label for="ssc">SSC / Matric (%):</label>
+      <input type="number" id="ssc" placeholder="e.g. 90" />
+    </div>
+
+    <div class="form-group hidden" id="fscGroup">
+      <label for="fsc">FSc / A-Levels / DAE (%):</label>
+      <input type="number" id="fsc" placeholder="e.g. 85" />
+    </div>
+
+    <button id="calculateBtn">Calculate Aggregate</button>
+    <button id="printBtn">🖨️ Print</button>
+
+    <div id="result" class="result-section"></div>
+    <div id="recommendations" class="recommendation-section"></div>
+
+    <footer>
+      <p>🔧 Developed with ❤️ by Shahkaar Gul</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
